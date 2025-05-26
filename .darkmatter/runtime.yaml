@@ -1,0 +1,10 @@
+env:
+
+before-command: npm install
+
+preview-command: npm run dev
+
+verification-command: npm run type
+
+forward-ports:
+- 3000
