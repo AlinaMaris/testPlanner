@@ -1,1 +1,2 @@
 AIRA-991 advanced PR triggers QA marker.
+Synchronize event marker after ready-for-review.
