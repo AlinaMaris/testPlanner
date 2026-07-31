@@ -1,0 +1,18 @@
+name: AIRA-991 usercase CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+  workflow_dispatch:
+
+jobs:
+  usercase-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify QA status
+        run: |
+          test "$(cat aira-991-ci-status.txt)" = "status=fixed"
