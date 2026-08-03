@@ -1,0 +1,10 @@
+name: AIRA-991 smoke job 20260803-101946
+on:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "build failure" && exit 1
