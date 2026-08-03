@@ -1,1 +1,1 @@
-draft-sync=after-ready-push
+draft-sync=second-ready-push
