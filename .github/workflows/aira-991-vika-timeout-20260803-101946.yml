@@ -1,0 +1,11 @@
+name: AIRA-991 smoke timeout 20260803-101946
+on:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  timeout:
+    name: timeout intentionally
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: sleep 180
