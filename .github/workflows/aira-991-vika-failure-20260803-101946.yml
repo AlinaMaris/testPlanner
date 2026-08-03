@@ -1,0 +1,10 @@
+name: AIRA-991 smoke failure 20260803-101946
+on:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  fail:
+    name: fail intentionally
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "AIRA-991 failure smoke" && exit 1
