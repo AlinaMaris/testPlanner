@@ -1,0 +1,10 @@
+name: AIRA-991 smoke job 20260803-101946
+on:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  lint:
+    name: Run lint checks
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "lint failure" && exit 1
