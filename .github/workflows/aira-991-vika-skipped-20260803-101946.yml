@@ -1,0 +1,11 @@
+name: AIRA-991 smoke failure 20260803-101946
+on:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  skipped:
+    if: ${{ false }}
+    name: skipped intentionally
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "should not run"
