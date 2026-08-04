@@ -1,0 +1,2 @@
+AIRA-1076 read-only PR comment QA fixture
+Created at 20260804-145056 UTC
